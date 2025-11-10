@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Icon Tester</title>
+    <link rel="icon" href="https://nipunadodan.com/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="min-h-screen w-screen justify-center items-center flex">
+    <div id="container" class="flex flex-row gap-2">
+        <div class="left">
+            <h1>Icon Tester</h1>
+
+            <label for="file">Upload an icon</label>
+            <input type="file" id="file" accept="image/*" />
+
+            <label>Icon Sizes</label>
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-row gap-1">
+                    <div class="flex flex-col gap-1">
+                        <label for="size1">Size 1</label>
+                        <input type="number" id="size1" min="10" max="200" value="150" />
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="size2">Size 2</label>
+                        <input type="number" id="size2" min="10" max="200" value="100" />
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="size3">Size 3</label>
+                        <input type="number" id="size3" min="10" max="200" value="64" />
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="size4">Size 4</label>
+                        <input type="number" id="size4" min="10" max="200" value="32" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <label for="blur">Blur Amount</label>
+                    <input type="range" id="blur" min="0" max="20" value="4" />
+                </div>
+
+                <label>Background Colour</label>
+                <div class="flex flex-row gap-2">
+                    <div class="flex flex-col gap-1">
+                        <label for="bgColourDark">Dark Mode</label>
+                        <input type="color" id="bgColourDark" value="#434343" />
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="bgColourLight">Light Mode</label>
+                        <input type="color" id="bgColourLight" value="#dfdfdf" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <canvas id="previewDark"></canvas>
+            <canvas id="previewLight"></canvas>
+        </div>
+    </div>
+</div>
+</body>
+</html>
